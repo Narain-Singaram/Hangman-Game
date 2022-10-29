@@ -72,11 +72,13 @@ print(''' _    _   ______   ______   ______   _________   ______   ______
 |_|  |_| |_|  |_| |_|  |_| |_|__|_| |_| |_| |_| |_|  |_| |_|  |_| 
 Created by: Narain Singaram''')
 
+print(display)
+
 for _ in range(len(selected_word)):
     display += "_"
 
 while not game_end:
-    user_input = input("\n Select a letter: ").lower()
+    user_input = input("Select a letter: ").lower()
 
     if user_input in display:
         print(f"\nYou've already used this letter. Please try another letter.")

@@ -1,7 +1,7 @@
 from array import array
 import random
 
-hangmen = ['''
+stages = ['''
   +---+
   |   |
   O   |
@@ -64,7 +64,7 @@ array_selected_word = ([*selected_word])
 
 game_end = False
 display = []
-lives = 6
+lives = 5
 
 print(display == array_selected_word)
 
@@ -80,14 +80,7 @@ while not game_end:
             display[pos] = letter
     print(display)
 
-    print(hangmen[lives])
-
-    if user_input in display:
-        print("water")
-
     if user_input not in array_selected_word:
-        print(
-            f"{user_input} is not in the word. You only have {lives} lives remaining. \n")
         lives -= 1
         if lives == 0:
             game_end = True
@@ -95,3 +88,4 @@ while not game_end:
     if display == array_selected_word:
         print("You won!")
         game_end = True
+    print(stages[lives])

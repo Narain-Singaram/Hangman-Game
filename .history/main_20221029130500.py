@@ -82,7 +82,7 @@ while not game_end:
 
     print(hangmen[lives])
 
-    if user_input in display:
+    if user_input in selected_word:
         print("water")
 
     if user_input not in array_selected_word:

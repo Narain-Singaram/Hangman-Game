@@ -78,16 +78,14 @@ while not game_end:
         letter = selected_word[pos]
         if user_input == letter:
             display[pos] = letter
+            print(f"You guessed {user_input}, which is not in the word ")
+        elif user_input != letter:
+            print(f"You guessed {user_input}, which is not in the word ")
     print(display)
 
     print(hangmen[lives])
 
-    if user_input in display:
-        print("water")
-
     if user_input not in array_selected_word:
-        print(
-            f"{user_input} is not in the word. You only have {lives} lives remaining. \n")
         lives -= 1
         if lives == 0:
             game_end = True

@@ -82,12 +82,8 @@ while not game_end:
 
     print(hangmen[lives])
 
-    if user_input in display:
-        print("water")
-
     if user_input not in array_selected_word:
-        print(
-            f"{user_input} is not in the word. You only have {lives} lives remaining. \n")
+        print(f"You guessed {user_input}, which is in the word ")
         lives -= 1
         if lives == 0:
             game_end = True

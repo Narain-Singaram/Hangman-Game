@@ -7,9 +7,6 @@ array_selected_word = ([*selected_word])
 
 game_end = False
 display = []
-
-print(display == array_selected_word)
-
 for _ in range(len(selected_word)):
     display += "_"
 
@@ -22,6 +19,8 @@ while not game_end:
             display[pos] = letter
     print(display)
 
-    if display == array_selected_word:
-        print("You won!")
-        game_end = True
+if display == array_selected_word:
+    print("You won!")
+    game_end = True
+
+display == array_selected_word

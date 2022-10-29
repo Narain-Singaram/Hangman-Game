@@ -22,6 +22,6 @@ while not game_end:
             display[pos] = letter
     print(display)
 
-    if display == array_selected_word:
-        print("You won!")
-        game_end = True
+if display == array_selected_word:
+    print("You won!")
+    game_end = True

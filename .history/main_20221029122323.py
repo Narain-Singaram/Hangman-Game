@@ -5,11 +5,12 @@ word_list = ["aardvark", "baboon", "camel"]
 selected_word = random.choice(word_list)
 array_selected_word = ([*selected_word])
 
-game_end = False
+
+user_input = input("Select a letter").lower()
+
 display = []
 
-while not game_end:
-    user_input = input("Select a letter").lower()
+if not display != array_selected_word:
     for letter in range(len(selected_word)):
         display += "_"
 
@@ -21,6 +22,4 @@ while not game_end:
             display[pos] = '_'
     print(display)
 
-if display == array_selected_word:
-    print("You won!")
-    game_end = True
+if

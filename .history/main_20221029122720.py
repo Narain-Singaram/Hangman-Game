@@ -8,9 +8,9 @@ array_selected_word = ([*selected_word])
 game_end = False
 display = []
 
-while not game_end:
-    user_input = input("Select a letter").lower()
-    for letter in range(len(selected_word)):
+while not game_end
+  user_input = input("Select a letter").lower()
+   for letter in range(len(selected_word)):
         display += "_"
 
     for pos in range(len(selected_word)):

@@ -8,16 +8,16 @@ print(array_selected_word)
 
 user_input = input("Select a letter").lower()
 
+for letter in array_selected_word:
+    if user_input == letter:
+        print("Correct")
+    else:
+        print("Incorrect")
 
 display = []
 
-for letter in range(len(selected_word)):
+for letter in selected_word:
     display += "_"
-print(display)
-
-for pos in range(len(selected_word)):
-    letter = selected_word[pos]
     if user_input == letter:
-        display[pos] = letter
-    else:
-        display[pos] = '_'
+        display += letter
+print(display)

@@ -18,6 +18,6 @@ print(display)
 for pos in range(len(selected_word)):
     letter = selected_word[pos]
     if user_input == letter:
-        display[pos] = letter
+        display[pos] =
     else:
-        display[pos] = '_'
+        print("Incorrect")

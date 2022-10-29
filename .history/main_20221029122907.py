@@ -7,7 +7,8 @@ array_selected_word = ([*selected_word])
 
 game_end = False
 display = []
-for _ in range(len(selected_word)):
+
+for letter in range(len(selected_word)):
     display += "_"
 
 while not game_end:

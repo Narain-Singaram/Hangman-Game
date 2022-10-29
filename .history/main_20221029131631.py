@@ -76,6 +76,9 @@ while not game_end:
 
     if user_input in display:
         print(f"\nYou've already used this letter. Please try another letter.")
+    elif user_input not in array_selected_word:
+        if lives == 0:
+            print("You've lost all of your lives.")
 
     for pos in range(len(selected_word)):
         letter = selected_word[pos]
@@ -93,7 +96,6 @@ while not game_end:
         lives -= 1
         if lives == 0:
             game_end = True
-            print("You've lost all of your lives.")
     if display == array_selected_word:
         print("You won!")
         game_end = True

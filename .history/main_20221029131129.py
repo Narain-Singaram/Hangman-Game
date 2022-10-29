@@ -82,9 +82,6 @@ while not game_end:
         if user_input == letter:
             display[pos] = letter
 
-    if user_input != '':
-        print(display)
-
     print(hangmen[lives])
 
     if user_input not in array_selected_word:

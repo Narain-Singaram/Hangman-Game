@@ -77,13 +77,12 @@ while not game_end:
     if user_input in display:
         print(f"\nYou've already used this letter. Please try another letter.")
 
+    if user_input != '':
     for pos in range(len(selected_word)):
         letter = selected_word[pos]
         if user_input == letter:
             display[pos] = letter
-
-    if user_input != '':
-        print(display)
+    print(display)
 
     print(hangmen[lives])
 

@@ -93,7 +93,6 @@ while not game_end:
         lives -= 1
         if lives == 0:
             game_end = True
-            print("You've lost all of your lives.")
     if display == array_selected_word:
         print("You won!")
         game_end = True

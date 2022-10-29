@@ -73,6 +73,7 @@ for _ in range(len(selected_word)):
 
 while not game_end:
     user_input = input("Select a letter: ").lower()
+    print(user_input)
 
     if user_input in display:
         print(f"\nYou've already used this letter. Please try another letter.")

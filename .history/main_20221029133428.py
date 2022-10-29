@@ -77,7 +77,7 @@ print('''
  ▒ ░▒░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ░   ░ ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░
  ░  ░░ ░  ░   ▒      ░   ░ ░ ░ ░   ░ ░      ░     ░   ▒      ░   ░ ░ 
  ░  ░  ░      ░  ░         ░       ░        ░         ░  ░         ░ 
- Created by: Narain Singaram
+                                                                     
 ''')
 
 for _ in range(len(selected_word)):
